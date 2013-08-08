@@ -1,0 +1,30 @@
+body {
+  background-color: #ccf
+}
+
+.module {
+  border: solid grey 2px;
+}
+
+#instructions {
+  margin: .5em;
+  font-size:.8em;
+  background-color:#ffc;
+}
+
+#mappings{
+
+  height: 20em;
+  width: 10em;
+
+}
+
+#mappings_div {
+  float:right;
+}
+
+
+#ciphertext{
+  height: 20em;
+  width: 20em;
+}

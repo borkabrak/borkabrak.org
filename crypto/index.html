@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="crypto.css" />
+    <script type="text/javascript" src="../scripts/jquery-1.4.4.js"></script>
+    <script type="text/javascript" src="crypto.js"></script>
+  </head>
+  <body>
+
+    <h1>Cryptogram Help!</h1>
+    <span id="subtitle">
+    This is a tool intended to help you figure out cryptograms!  Because EVERYBODY loves cryptograms, right?  ..right?
+    </span>
+
+    <div id="instructions">
+    <h3> Instructions: </h3>
+
+    Ciphertext: The original, encoded text.<br />
+    Letter mappings: Your guesses as to what letter in the ciphertext corresponds to what letter in the answer. Separate pairs by commas or whitespace, seperate the letters that make up a pair with an optional colon.  (Ex: "a:z,b:x,c:y" means that 'abc' is code for 'zxy')
+
+    </div>
+
+    <div id="mappings_div" class="module">
+    <h2>Letter mappings:</h2>
+    <textarea id="mappings"></textarea>
+    </div>
+
+
+    <div id="ciphertext_div" class="module">
+    <h2>Cipher text:</h2>
+    <textarea id="ciphertext"></textarea>
+    </div>
+
+    <div id="plaintext_div" class="module">
+    <h2>Plain text:</h2>
+    <div id="plaintext" />
+    </div>
+
+    <button onclick="decipher()" >Decipher</button>
+
+  </body>
+</html>

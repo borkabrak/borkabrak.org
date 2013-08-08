@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+            "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title>Calculator </title>
+    <script type="text/javascript" src="../scripts/jquery-1.4.4.js"></script>
+    <script type="text/javascript" src="calc.js"></script>
+    <link rel="stylesheet" href="calc.css" type="text/css" />
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <p>
+    Input a mathematical formula in postfix notation.  (An example is shown) <br />
+    Click '=' or hit the Enter key to get the answer.
+    </p>
+  <div id="calculator">
+    <div id="result">&nbsp;</div>
+    <input id="postfix_line" value="100 17 3 * -"/>
+    <button id="go_button"> = </button>
+    <div id="error"></div>
+  </div>
+    <br />
+    <!-- <input id="infix_line" value="9 + 14"/> -->
+  </body>
+</html>

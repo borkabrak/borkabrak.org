@@ -1,0 +1,62 @@
+h3 {
+  margin:0px;
+  background-color: #f55;
+}
+
+.hidden {
+  /* display: none */
+}
+
+.card {
+  border: solid #200 2px;
+  background-color: #ddd;
+  position: absolute;
+  font-family: monospace;
+  height: 6em;
+  width: 5em;
+}
+
+.suit {
+  font: 2em serif;
+}
+
+.top_left {
+  position: absolute;
+  top: 2px;
+  left: 4px;
+}
+
+.bottom_right {
+  position: absolute;
+  right: 4px;
+  bottom: 2px;
+}
+
+.rank {
+  position: absolute;
+  top: 30%;
+  left: 33%;
+  font: 1.8em serif;
+  font-weight:bold;
+  color: blue;
+}
+
+.cards {
+  background-color: green;
+  border: solid green 2px;
+  height: 8em;
+}
+
+.status {
+  background-color: #cfc;
+}
+
+.show {
+  height: 3em;
+  white-space: pre-line;
+}
+
+#display {
+  border: solid blue 2px;
+}
+

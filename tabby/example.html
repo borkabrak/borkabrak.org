@@ -1,0 +1,18 @@
+<h1>An Example</h1>
+Make sure to include tabby.css and tabby.js in your html.  
+Then the Tabby() function may be called like this:
+<pre>
+
+  Tabby('tabset_container',{
+    tabs: {
+      'welcome': 'welcome.html',
+      'contact': 'contact.html',
+      'links': 'otherlinks.html',
+    },
+    defaulttab: 'welcome'
+  });
+</pre>
+
+This will create three tabs, labelled 'welcome', 'contact', and 'links'.  When
+clicked, the tab pane will show the corresponding content.  When the tab
+set is first created, the 'welcome' tab will be shown by default.

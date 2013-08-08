@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../style.css" />
+    <script type="text/javascript" src="../scripts/jquery-1.4.2.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="tabby.js"></script>
+
+    <title>Welcome</title>
+
+  </head>
+
+  <body class="light" >
+
+    <div id="tabby"></div> 
+
+    <script type="text/javascript" >
+      // Initialize tab list
+      Tabby("tabby", {
+
+        "tabs": {
+          'hello': 'welcome.html',
+          'overview': 'overview.html',
+          'how to': 'howto.html',
+          'example': 'example.html',
+          'options': 'options.html',
+          'bugs/todo': 'bugs.html',
+          'download': 'download.php'
+        },
+
+        "defaulttab": "hello",
+        "doslide": true,
+        "hotkeys": true
+
+      }); 
+
+    </script>
+
+  </body>
+
+</html>

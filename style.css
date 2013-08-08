@@ -1,0 +1,43 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+  padding: 1px;
+  border: solid white 1px;
+}
+
+a:hover {
+  border: dotted blue 1px;
+}
+
+body.light {
+  background-color: white;
+  color: black;
+}
+
+button {
+  background-color: white;
+  color: black;
+}
+
+h1 {
+  color: black;
+  font-size:1.7em;
+}
+
+dfn:before {
+  content:'"';
+}
+
+dfn:after {
+  content:'"';
+}
+
+dfn {
+  font-family:monospace;
+}

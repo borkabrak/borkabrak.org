@@ -1,0 +1,39 @@
+/* Tabby styles 
+ *
+ *  These should all apply only to elements within a .tabby element, to avoid
+ *  polluting the css 'namespace'
+ *
+ * 
+ */
+
+.tabby .tab {
+  border: solid blue 1px;
+  border-top-left-radius: 0.3em;
+  border-top-right-radius: 0.3em;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding-left: .5em;
+  padding-right: .5em;
+  padding-bottom: 0;
+  color: blue;
+}
+
+.tabby .tab:hover {
+  background-color:blue;
+  color:white;
+}
+
+.tabby .pane {
+  display: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 2em;
+  color: black;
+  border: solid blue 1px;
+  width: 50%;
+}
+
+.tabby .active {
+  background-color:blue;
+  color:white;
+}

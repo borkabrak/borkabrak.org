@@ -1,0 +1,93 @@
+/* 
+ Tabby - simplified tabbing, using ajax and jquery
+
+*/
+
+// This is the initial function to call that populates the given container with
+// tabs and panes corresponding to the given list
+
+Tabby = function(container,options){
+
+  $("#" + container).addClass("tabby");
+  var tablist = options.tabs;
+  // Create tabs
+  for (i in tablist){
+    var tabid = phraseToId(i);
+    var tab = document.createElement("span");
+    tab.setAttribute("id","tab-" + tabid);
+    tab.setAttribute("class","tab");
+    tab.setAttribute("onclick","showtab('" + tabid + "','" + tablist[i] + "')");
+    tab.innerHTML = i;
+    document.getElementById(container).appendChild(tab);
+
+  }
+
+  // Create panes
+  for (i in tablist){
+    var paneid = phraseToId(i);
+    var pane = document.createElement("div");
+    pane.setAttribute("id",paneid);
+    pane.setAttribute("class","pane");
+    document.getElementById(container).appendChild(pane);
+  }
+
+  //Load default tab (if specified)
+  if (options.defaulttab){
+    showtab(options.defaulttab,tablist[options.defaulttab]);
+  }
+  
+};
+
+function showtab(paneid,url) {
+
+  //Hide all the panes
+  $(".tabby .pane").hide();
+
+  // Fetch the contents of the tab we want to show
+  var pane = $("#" + paneid);
+  $.ajax({
+    url: url,
+    method:"get",
+    success: function(response,status,xhr){
+      // When we get the content, show it
+      $("#" + paneid)[0].innerHTML = response;
+      pane.slideDown();
+    }
+  });
+
+  // Indicate which tab is active
+  $(".tabby .tab").removeClass("active");
+  $("#tab-" + paneid).addClass("active");
+
+}
+
+function phraseToId(phrase){
+    // Needed for converting tab names into valid HTML identifiers.
+    var idstring = phrase.replace(" ","-");
+    idstring = idstring.replace("/","-slash-");
+    return idstring;
+}
+
+function keypressed(event){
+  console.log("keypressed: " + event.keyCode);
+
+  var key = event.keyCode;
+
+  // Next tab ('n' or 'l') moves next
+  if ((key === 110) || (key === 108)){
+    return showNextTab();
+  }
+
+  if ((key === 112) || (key === 104)){
+    return showPreviousTab();
+  }
+
+}
+
+function showNextTab(){
+  console.log("Show Next Tab");
+}
+
+function showPreviousTab(){
+  console.log("Show Previous Tab");
+}

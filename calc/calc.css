@@ -1,0 +1,21 @@
+body {
+
+  font-family: sans-serif;
+
+}
+
+#result {
+
+  background-color: #afa;
+  border: solid blue 1px;
+  padding:.2em;
+  font-size: 2em;
+  text-align: center;
+  width: 4.5em;
+  overflow: hidden;
+
+}
+
+#error {
+  color:red;
+}
