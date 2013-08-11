@@ -2,14 +2,24 @@ body {
   margin: 5%;
   font-family: sans-serif;
   line-height: 1.5em;
+  background-color: #d3d9b5;
 }
 
 #title {
-  font-size: 600%;
+  font-size: 4.5em;
 }
 
 #contact-info {
   width: 33%;
+  margin-bottom: 5%;
+}
+
+h1, h2 {
+  border-radius: 0.2em;
+  border-bottom: solid #538955 .1em;
+  padding-bottom: 0.4em;
+  margin-bottom: 5%;
+  width: 50%;
 }
 
 #description {
@@ -17,21 +27,22 @@ body {
 }
 
 #portrait {
-  width: 33%;
+  width: 15%;
   border: solid #555 1px;
   border-radius: 0.5em;
   float: right;
 }
 
 a {
-    text-decoration: none;
-    border-bottom: solid blue 1px;
-    padding-bottom: .001em;
-    font-weight: bold;
+  text-decoration: none;
+  border-bottom: solid 1px;
+  padding-bottom: .01em;
+  font-weight: bold;
 }
 
 nav ul {
   list-style-type: none;
+  font-style: italic;
 }
 
 nav li {
