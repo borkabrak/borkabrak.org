@@ -1,0 +1,38 @@
+body {
+  margin: 5%;
+  font-family: sans-serif;
+  line-height: 1.5em;
+}
+
+#title {
+  font-size: 600%;
+}
+
+#contact-info {
+  width: 33%;
+}
+
+#description {
+  width: 33%;
+}
+
+#portrait {
+  width: 33%;
+  border: solid #555 1px;
+  border-radius: 0.5em;
+  float: right;
+}
+
+a {
+    text-decoration: none;
+    border-bottom: solid blue 1px;
+    padding-bottom: .001em;
+    font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+}

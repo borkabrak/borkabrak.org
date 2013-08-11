@@ -1,0 +1,11 @@
+/*
+    For the rationale behind what we're doing to anchors here, See:
+    http://sixrevisions.com/usability/hyperlink-design/
+*/
+
+a {
+    text-decoration: none;
+    border-bottom: solid blue 1px;
+    padding-bottom: 0;
+    font-weight: bold;
+}
