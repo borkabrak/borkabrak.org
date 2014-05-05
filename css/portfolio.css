@@ -2,11 +2,12 @@ body {
   margin: 5%;
   font-family: sans-serif;
   line-height: 1.5em;
-  background-color: #d3d9b5;
+  background-color: #fff;
 }
 
 #title {
   font-size: 4.5em;
+  line-height: 1em;
 }
 
 #contact-info {
@@ -26,8 +27,8 @@ h1, h2 {
   width: 33%;
 }
 
-#portrait {
-  width: 15%;
+img {
+  width: 30%;
   border: solid #555 1px;
   border-radius: 0.5em;
   float: right;
@@ -40,7 +41,7 @@ a {
   font-weight: bold;
 }
 
-nav ul {
+section ul {
   list-style-type: none;
   font-style: italic;
 }

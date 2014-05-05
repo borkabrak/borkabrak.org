@@ -1,0 +1,50 @@
+
+body {
+    background-color: #e28b1f;
+}
+
+.marker {
+
+    width: 0;
+    height: 0;
+
+    margin: 0.5em;
+
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0);
+
+    border-width: 1.5em;
+    border-left-color: green;
+    -webkit-transform-origin: 25%;
+    -webkit-transition: -webkit-transform 0.4s;
+
+}
+
+aside {
+  width: 60%;
+}
+
+section {
+    background-color: #66afff;
+    border: 0;
+    white-space: pre;
+    width: 50em;
+    margin-left: 2em;
+    -webkit-transition: 0.4s;
+    
+    width: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.marker:hover {
+    -webkit-transform: rotate(90deg);
+}
+
+.marker:hover+section, .marker+section:hover {
+    width: 60%;
+    max-height: 900px;
+    border: outset #88a 0.3em;
+    border-radius: 0.5em;
+}
+

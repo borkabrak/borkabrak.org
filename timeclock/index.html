@@ -1,8 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
   <head>
-
-    <script type="text/javascript" src="../scripts/jquery-1.4.4.js" ></script>
+    <meta charset="UTF-8" />
+    <script type="text/javascript" src="/script/jquery/jquery-1.7.2.js" ></script>
     <script type="text/javascript" src="timeclock.js"></script>
     <link rel="stylesheet" type="text/css" href="timeclock.css" />
 
@@ -23,9 +24,9 @@
           <h3 id="instructions-header">Instructions [type 'i']</h3>
 
           <dl id="instructions-list">
-            <dt>[Enter],[space]</dt>
+            <dt>[Enter], [space], click the 'punch' button</dt>
             <dd>Punch the clock</dd>
-            <dt>Shift-C</dt>
+            <dt>Shift-C, click the 'clear' button</dt>
             <dd>Clears the data</dd>
             <dt>i</dt>
             <dd>Toggle these instructions</dd>
@@ -34,8 +35,8 @@
         </div>
 
         <div id="buttons">
-          <button id="button-punch"  onclick="clock.punch()">Punch</button>
-          <button id="button-clear" onclick="clock.clear()">Clear</button>
+          <button id="punch" >Punch</button>
+          <button id="clear" >Clear</button>
         </div>
 
         <div id="readouts">
@@ -58,7 +59,19 @@
     </div>
 
     <script type="text/javascript">
-      $(window).load(function(){initialize()});
+    $(window).load(function(){
+        initialize();
+    });
+
+    $("button#punch").on('click', function(){
+        clock.punch();
+    });
+
+    $("#clear").on('click', function(event){
+        clock.clear();
+        event.stopPropagation();
+    });
+
     </script>
 
   </body>

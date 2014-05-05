@@ -5,39 +5,81 @@
         <meta charset='utf-8' />
         <title>Jonathan Carter's Web Portfolio</title>
         <link rel="stylesheet" href="css/portfolio.css" />
+        <script type="text/javascript" src="/script/jquery/jquery.js"></script>
+        <script type="text/javascript" src="tabby/tabby/tabby.js"></script>
     </head>
 
     <body>
 
       <section>
         <h1 id="title">Jonathan Carter</h1>
+        <h2>Experienced open source web developer</h2>
 
         <figure>
-          <img id="portrait" src="game-icon.png"></img>
+          <img title="This is what I look like" alt="My photograph" src="images/jdc-headshot.jpg"></img>
         </figure>
 
         <div id="contact-info">
           <a href="mailto:borkabrak@gmail.com">borkabrak@gmail.com</a> <br />
-          (601) 293-9673
+          (615) 293-9673
+          <br />
+          <a href="https://github.com/borkabrak">Github</a> <br />
+          <!-- <a href="http://borkabrak.tumblr.com">Tumblr</a> -->
         </div>
 
-        <p id="description">
-        I'm a web developer with over a decade of experience.  I use open
-        source software.  I value modern techniques and best practices. I want
-        to make something awesome for you.
+        <div id="description">
+            <p>
+            I have 10 years' experience in full-stack web development and applications
+            programming.  I get excited by open source technologies and up-to-date best practices.
+            </p>
+
+            <p>
+            My priorities are elegance and beauty when possible, and reliable performance,
+            regardless.  
+            </p>
+
+            <p>
+            I want to build something awesome for you.
+            </p>
+
+        </div>
+
+      </section>
+
+      <section id="skills">
+        <h1>Skills</h1>
+        <p>
+          Here are some technologies I'm particularly experienced with and/or interested in:
         </p>
+        <ul>
+          <li>Javascript</li>
+          <li>Perl</li>
+          <li>Ruby</li>
+          <li>Git</li>
+          <li>Vim</li>
+          <li>Linux</li>
+        </ul>
+      </section>
+
+      <figure>
+          <img title="A beautiful jewel emerging from dull rock" alt="An opal geode" src="images/opal-geode.jpg"></img>
+      </figure>
+
+      <section>
+        <h1>Some Software I've Made</h1>
+        <ul>
+          <li><a href="stijlus">Stijlus</a>, a simple drawing program using Raphael.js</li>
+          <li><a href="timeclock">TimeClock</a>, a punch-in/punch-out time tracking device.</li>
+          <li><a href="clock/">Clock</a> - a wall clock written in Javascript and Raphael, just for fun.</li>
+          <li><a href="tabby/index.html">Tabby</a> - a Javascript library to ease creation of tabbed-navigation.</li>
+          <li><a href="https://github.com/borkabrak/markov">Markov</a> - console scripts to generate random text, while retaining the original style!</li>
+          <li><a href="cssplay">CSS Menu</a> - a CSS-driven collapsible menu concept.</li>
+        </ul>
       </section>
 
       <section>
-        <h1>Software I've Made</h1>
-        <nav>
-          <ul>
-            <li><a href="stijlus/draw.html">Stijlus</a>, a simple drawing program using Raphael.js</li>
-            <li><a href="timeclock">TimeClock</a>, a punch-in/punch-out time tracking device.</li>
-            <li><a href="tabby/index.html">Tabby</a> - a Javascript library to ease creation of tabbed-navigation between various content urls.</li>
-            <li><a href="https://github.com/borkabrak/markov">Markov</a> - console scripts to generate random text, while retaining the original style!</li>
-          </ul>
-        </nav>
+        <p>
+          For a more conventional résumé, <a href="mailto:borkabrak+resume@borkabrak.org">email me</a>
       </section>
 
     </body>
