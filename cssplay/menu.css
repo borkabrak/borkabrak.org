@@ -1,6 +1,6 @@
 
 body {
-    background-color: #e28b1f;
+    background-color: #d3bb7c;
 }
 
 .marker {
@@ -15,8 +15,8 @@ body {
 
     border-width: 1.5em;
     border-left-color: green;
-    -webkit-transform-origin: 25%;
-    -webkit-transition: -webkit-transform 0.4s;
+    transform-origin: 25%;
+    transition: transform 0.4s;
 
 }
 
@@ -24,27 +24,41 @@ aside {
   width: 60%;
 }
 
-section {
-    background-color: #66afff;
-    border: 0;
+div.content {
+    background-color: white;
     white-space: pre;
     width: 50em;
     margin-left: 2em;
-    -webkit-transition: 0.4s;
-    
+    margin-bottom: 2em;
+    transition: 0.4s;
     width: 0;
-    max-height: 0;
     overflow: hidden;
+    border: solid transparent 0.3em;
+    border-left: 0;
+    border-right: 0;
+    color: white;
 }
 
-.marker:hover {
-    -webkit-transform: rotate(90deg);
+.marker:hover, section:hover .marker {
+    transform: rotate(90deg);
 }
 
-.marker:hover+section, .marker+section:hover {
+.marker:hover+div.content, .marker+div.content:hover, section:hover div.content {
     width: 60%;
     max-height: 900px;
     border: outset #88a 0.3em;
     border-radius: 0.5em;
+    color: black;
+    padding-right: 2em;
 }
 
+section {
+    width: 65%;
+    border-bottom: solid #a38b4c 1px;
+    border-radius: 0.5em;
+    transition: 0.4s;
+}
+
+section:hover {
+  background-color: #e3cb8c;
+}

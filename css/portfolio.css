@@ -2,7 +2,7 @@ body {
   margin: 5%;
   font-family: sans-serif;
   line-height: 1.5em;
-  background-color: #fff;
+  background-color: #b3bcc3;
 }
 
 #title {
@@ -47,4 +47,8 @@ section ul {
 }
 
 nav li {
+}
+
+#headshot {
+  width: 20em;
 }
